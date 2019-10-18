@@ -60,5 +60,17 @@ publishing {
             artifact(tasks["dist"])
         }
     }
+
+    repositories {
+        maven {
+            url = if((version as String).endsWith("-SNAPSHOT")) uri("https://repo.fagschlunger.co.at/libs-snapshot-local") else uri("https://repo.fagschlunger.co.at/libs-release-local")
+            credentials {
+                val maven_username: String? by project
+                val maven_password: String? by project
+                username = maven_username
+                password = maven_password
+            }
+        }
+    }
 }
 
