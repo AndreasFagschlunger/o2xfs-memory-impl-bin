@@ -36,5 +36,6 @@ install:
   - choco install jdk8
   - export PATH=$PATH:"/C/Program Files/Java/jdk1.8.0_221/bin"
   - ./gradlew --version
+  - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy Bypass'
 script:
-  - PowerShell -File './build.ps1' -ExecutionPolicy Bypass
+  - PowerShell -File './build.ps1'
