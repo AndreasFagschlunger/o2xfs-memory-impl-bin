@@ -37,4 +37,4 @@ install:
   - export PATH=$PATH:"/C/Program Files/Java/jdk1.8.0_221/bin"
   - ./gradlew --version
 script:
-  - PowerShell -File './build.ps1'
+  - PowerShell -File './build.ps1' -ExecutionPolicy Bypass
