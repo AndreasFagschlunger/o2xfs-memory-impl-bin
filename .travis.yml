@@ -1,0 +1,39 @@
+# BSD 2-Clause License
+# 
+# Copyright (c) 2019, AndreasFagschlunger
+# All rights reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+# 
+# 1. Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+# 
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+env:
+  global:
+    - secure: "OB3iMCTKEfT9C/lkZ5v1czg0YH6JJOg/E3W7819mCnnkKp3xD1kakf8v3USGCCuSeUEsUm0o9S10zSWjhhVVf0tgBdgh5siPwzSRBjhbWW7/F35jXaXF5/il8OVlaVqKocYl7zfWGnBXQIrnmOccp3xEx5DcxHeEsw/tzvaYNe//bm6O3mqTNzL+OwSBfMWFywK2cOZRNe3Bw/17DwTeRoTS5/v8JFjuAkGAXP//RcEbV+JlTqfabSzAizkT3VmCiZL40iLqeP5YD5jyNhwDZupFgki/5tkwFVPOvP5hDM4cfY6IjhAztdUIx6AtU3/5Mmcq1SPQVOaU4jP+3pKfLCPT0eS3Yed38F80J32clq4h7weg5/5tcXJb9ecrch293XvuaJRBWUiBEeil8EVAzLTTfjR2SIeIolgBTXgftBME9SDhQs+Wzch4VjBERLrtqT8a6eXykV124DxM0yQCYjeqjjcP2EAdmQAVkzjGzwlR+VbKapJ5kOTOrzzyTRFGYpwvC3/N+jCbbB+kPcztgVDmd8YLmQRH+LbY1KhBFYMu6WCYLs7OOrNBpjdcwkd1+y9NMTj/S9euEvamMMFZYgzGq3E0Alg+honMVZFGsAA8hIocDEw8WvzEco+OUy5q1CWLDeEpDQCSKuBV1bKzJLIFDgMtgWmbHKF4/bqJzaE="
+    - secure: "Qq+hCK9xj81+Wj4l20CZvFencbWoNrpWGKYbZ00R7pDYHaCW8ICiQdxUOlFlHrWUGzIVSqK2KoQX8hwK7wjuskPZ2O9jdZ7LZBy0rlOg5zVTfrrffeVPE42qnk0Eu1ZuhgmsgK+VGcGcNfdhYGjLQlCbx8t499XHIirGP/FL1rOSdzf0W2T2AtKuMDkYvoApVujz9pEnf76h38KGq1N9mB7yyg/ERXz5TPDvalQp9ZycyYkH/u1JqnIRc+rGHojuYDqf6LoFVRBwnHOPWL5hiClNdNBdvDGS9x5qQRPlbf25Ps3g7+LB6pEtm6Y9EAcZEkURAM0Kp8YC9aue9GdrfhfHmfug9kR73J5Twmry32YcAmxdSE0nC9xWbW+wZ/3VlyCMPIX7MVDoEdmSmwyrXN0nzv4PMLL5x4HKNm/oqH/0nB7ANAIthu9E6mpUsi/ef4NnegvayE9G94eQ7bmIKvskagdsVNMt0tl6Y8Al99udd1NP0XacHRg1BqiuQ6YPVTljHsBwZfIxqfrTJ7GwyzZSK2cs8IjEqUBho1O0Olw+tp0tMg38WJze4ZuwLzWE97jr6eile1vT0LeSInbiTau+asQ0N2jcmXqyw75CmGL8A3RiXH0LnqQl2SFJ3PMO86oVHbE1VyVYd9ujO5FKmwIdEI4pPdF8IAtY/HTACrE="
+    - secure: "e2IstGonn7XOLw/uDMuBJ77cbJLlFcejfqSXpigutThHoHmV4x+5NJtcZEQdIQGZLj29iH5YL5fEcKo2PYXeHY7l/dRi50hzEPTgVS1ZU7up4cd23Vb/ALEI37EXjH9BztYiWN24Q0vZuQkWorfYaZTM/Yq8ijhn6qb/1jH4N8T83dU9J/xbSQtbzvxmXrHI9zy03B+A2iXvd7GmbizDNYlJGInbBRaHcOq+8Sbp2Ss8f7WuK+C6F3VS1xFobfMDPGR06Ka6S0ZGP6qPRhH/X1U5NtJvdtsFGR/KDhRKZply6soZ7L5SHMsuAyC3Ti+z674QAzaVv6kuSyLxU5t1kp7iFxi5i5r5u0xaou56fF3vSQD+rbvH0bkoYyOzusnRQdwyLLxkHRIHxf5qqZ8J5YNi+955GxVzUQHTLrDM7VzKeSVLTbSD0JU86AVrudAM/QoWUHYqhVK2fFlKrrF6wpEV6IRPQ2lMpn1Q9BKkcJjSe27rk6o58Ol7VXjrcH89wv7cy0YnSBOA4GjpPMDeEHMKNWcMPClY5+L3RDPvknjOeVR0gzsTDk61FCK8FN2axjcYA7SH4rpSzFEs1efr+WVkctgRRwMHKpMpIdHPiySjepA4YfDLF8j+ZY99727sgrnQ1A0lZwusoLnPUqDiA3QrP+etbkJHa+79NgxqThM="
+
+os: windows
+language: cpp
+jdk:
+  - openjdk8
+install: ./gradlew --version
+script:
+  - PowerShell -File './build.ps1'
