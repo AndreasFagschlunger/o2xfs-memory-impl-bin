@@ -34,6 +34,7 @@ os: windows
 language: cpp
 install:
   - choco install ojdkbuild8
+  - refreshenv
   - ./gradlew --version
 script:
   - PowerShell -File './build.ps1'
