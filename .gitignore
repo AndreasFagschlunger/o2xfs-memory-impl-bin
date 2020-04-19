@@ -1,4 +1,5 @@
 .gradle/
+.vs/
 bin/
 build/
 *.sln

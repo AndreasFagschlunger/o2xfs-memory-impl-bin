@@ -13,7 +13,7 @@ val javaHome = System.getenv("JAVA_HOME") ?: System.getProperty("java.home")
 
 val javah by tasks.registering(Exec::class) {
     val javah = (System.getenv("JAVA_HOME") ?: System.getProperty("java.home")) + "/bin/javah.exe"
-    commandLine(javah, "-d", file("src/main/public"), "-cp", file("../o2xfs-memory-impl/src/main/java"), "at.o2xfs.memory.impl.win32.Win32MemorySystem")
+    commandLine(javah, "-d", file("src/main/headers"), "-cp", file("../o2xfs-memory-impl/src/main/java"), "at.o2xfs.memory.impl.win32.Win32MemorySystem")
 }
 
 library {
@@ -50,7 +50,7 @@ tasks.register<Jar>("dist") {
 
 tasks.withType<PublishToMavenLocal>().configureEach {
     onlyIf {
-        publication == publishing.publications["mavenJava"]        
+        publication == publishing.publications["mavenJava"]
     }
 }
 

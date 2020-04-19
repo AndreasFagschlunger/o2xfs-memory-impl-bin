@@ -30,3 +30,7 @@ JNIEXPORT jbyteArray JNICALL Java_at_o2xfs_memory_impl_win32_Win32MemorySystem_r
 	env->SetByteArrayRegion(result, 0, len, (jbyte*) p + offset);
 	return result;
 }
+
+JNIEXPORT jint JNICALL Java_at_o2xfs_memory_impl_win32_Win32MemorySystem_sizeof(JNIEnv* env, jclass cls) {
+	return sizeof(LPVOID);
+}
