@@ -26,16 +26,14 @@
 
 env:
   global:
-    - secure: "Pd81uRli1890v0DWFcPo+cf22hWtgRsGCaicUTkO5swiQrLRhysdW5XtOZJHzPEMejYORz3418yEua7EGVB6msSGpffrmFo3UJ5De96oOv1RqnMid7M+OLhrCCnTW1H1w+uQr2qWgZopRTU7SOIy2z/RQP7h2jIoCnR1YHxga2800s2reHDRci/a5pv2wnf+KcwyWZFabdPCn02sWJ4NeD1Crl/vrts4sscGUvqpEXfONJqwO1QAiowspcQLMPnmGe5TfWjQPf32egLaNLz/DHUEVb1U/seZQDl6Kit43ixFj4BZyDIxFSxTh5hvKGAGkunOzMk7JeUtIw8Fdc2mNu/MFmc4kwoTCgi2jzv6Z9x3VPBSIPljLcnSFJcsZbSoRZmfZ0mqdjICU+VfODRFqGag7O6tL3QM2Z9EQC/4XcQstrEwKWruQ0qksaCxSivjzDrYk5NfEen+SRb91iYxExc60T5VnCNSmTR2PFssPUwhECex7RF2cYnO6e+2VopCxw8aVCa4cL1xsV9N1hTupjxdunuOmrZ3cT8ET8fJh5svlQO9iXbuUN+QTTpEaU2hfzJtTBQrIwxeXzvvCYRjX24VYPNVVHNSJNqrcfxLHPG6kTLD75aPN5aXsvx405bW5y26Py6QVG6uD8TxQ7spW9CSO+SSYQpmMy7EuRmRWVQ="
-    - secure: "perUsU5OJCD4RGd6Vh5xrBF386+rGAKsf7UV2sELs0CjG6ZoxE/XnFiG3ihcMYqpUFgd5xza5q3ae+ulyHSSCKx4lRgsH2gCrq4U3agymYy00UVcWqAreWx/fLWdmaQL76D9wkbnkA1TODFPBbXo36z7w7kEq2r4t+xcv9xGJs9P8z1PjLkULLjxhCV8A4vZWITHFG8xBka4fREGCkt+58OZut06B5jcX4AK5zJFwaLxpITM7CaDSWkGx5iJ8rQNak25zJxwt1kMmbTAeJOyu7UMWgtpnaOafNGmQSgBkoyGjCJcwzb0hY5LHTFk3JlNNQ8fSr+tuy+TO7SpD6xJ/V3qmwLPLmDVyuTCpsGny8ck/fYt43YEFtUjGOL7Xz/Yxl/hJYq3wQy2aXsQkldBFueqa031uD0hkKy6qeYcj8npY7hvm+u/clwunNm6nlSTBbbzel/ouvWpc7yGyOrThP4xDSBfYZNZPbQM/lYPQGPSRnvk7p+4McH5AtRi6+ji9ana7tO5JifyXRGzMmqQicqs9GncEvP0ZnGHBSRpvaoRzG0Fv/7VuXUlJmdid+/8Xa7gRGV0YiVnC1bI/ZxRjxfF+qqkHZQqiVU+ROBUWt0ook8ins4acut1z4OekYA7HL1db62VG/Z6VM5dJV97Qn4vZZ8hf13xGTM+SZwmfNY="
-    - secure: "dfpMGB7YcGVLOC0JUt0mYpgivQ6kzeOk8w1usaP5uK9iL2ukvkKfAX6qhM6txOFB5sbvAmHuAZTIw+gudFmwaZm+OiqFz2D72JodU54fd/BB9e4vKIeCsb6URX7nYLZLR5ZYa7C+UGYWvLt9Mk2zf2apmJ9e0Ai1TVfIzJv2cF8RK+QJzTDNolhUOxr1r+EKmthcNDYo07WFO5WyXAyo9eObUzcVKGl9ai/Y5xqFOMqOVTNmxzZC+l9dX0KWRTvM9ePPaxsPtudak+bWzct5BzX3mNfJoMK0GZJmyJXXxCPFdwoT9qGYFGVYkBFB61ft0FhH/7hjj5p9CNc3Lc7OziwgXmD3rXwkqGKEFrCswk3p/NtVN0Erizsiwp3WAGgFz2EdDyFNWrvSNu0trJKDZK6PpiKfd/YTgYvchxuCiuDRLQ91tEKZNmp8aG6Yns3lO83/1MOUdT2rvzqnDk1JeLWYDNrT2pVFf1+8wONi4hcuXH8u3tVkW4wq1l/zX+QZB/QjWIIVMqD/wYdJLCtjF5eUvk2rZAc1R7RqXGFXqf4ZHNfLRYxFEs31TdbKJ10lkj1CehGGHKTWNou6szXQGbj3pFfBI3VzilQrw9lBHufJSGfKHEyteZRujUfcy2sh1hpCrkgnOceWZUk50H141UHoehoZfcM1RFpAijMAu+4="
+    - GRADLE_OPTS="-Dorg.gradle.daemon=false"
 
 os: windows
 language: cpp
 install:
-  - choco install jdk8
-  - export PATH=$PATH:"/C/Program Files/Java/jdk1.8.0_221/bin"
-  - export JAVA_HOME="/C/Program Files/Java/jdk1.8.0_221"
+  - choco install adoptopenjdk
+  - export PATH=$PATH:"C:\Program Files\AdoptOpenJDK\jdk-14.0.1.7-hotspot\bin"
+  - export JAVA_HOME="C:\Program Files\AdoptOpenJDK\jdk-14.0.1.7-hotspot"
   - ./gradlew --version
   - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy Bypass'
 script:

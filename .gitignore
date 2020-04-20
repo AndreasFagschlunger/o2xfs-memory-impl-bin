@@ -1,5 +1,6 @@
 .gradle/
+.vs/
 bin/
 build/
-.project
-.classpath
+*.sln
+*.vcxproj*

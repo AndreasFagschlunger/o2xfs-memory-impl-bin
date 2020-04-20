@@ -31,6 +31,14 @@ JNIEXPORT void JNICALL Java_at_o2xfs_memory_impl_win32_Win32MemorySystem_free0
 JNIEXPORT jbyteArray JNICALL Java_at_o2xfs_memory_impl_win32_Win32MemorySystem_read0
   (JNIEnv *, jobject, jbyteArray, jint, jint);
 
+/*
+ * Class:     at_o2xfs_memory_impl_win32_Win32MemorySystem
+ * Method:    sizeof
+ * Signature: ()I
+ */
+JNIEXPORT jint JNICALL Java_at_o2xfs_memory_impl_win32_Win32MemorySystem_sizeof
+  (JNIEnv *, jclass);
+
 #ifdef __cplusplus
 }
 #endif

@@ -31,7 +31,7 @@ If ($env:TRAVIS_BRANCH -eq 'master') {
     (Get-Content 'build.gradle.kts') | Foreach-Object {$_ -replace "[ ]*version[ ]*=[ ]*`"$version`"", "version = `"$newVersion`"" } | Out-File 'build.gradle.kts'
 }
 
-./gradlew clean dist
+./gradlew --no-daemon clean dist
 
 If ($env:TRAVIS_BRANCH -eq 'master') {
     StartProcess -FilePath 'git' -ArgumentList 'config', '--global', 'push.default', 'simple'
@@ -50,3 +50,5 @@ If ($env:TRAVIS_BRANCH -eq 'master') {
 If ($env:TRAVIS_BRANCH -eq 'master' -or $env:TRAVIS_BRANCH -eq 'develop') {
     ./gradlew publish
 }
+
+exit $LastExitCode

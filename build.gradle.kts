@@ -13,12 +13,26 @@ val javaHome = System.getenv("JAVA_HOME") ?: System.getProperty("java.home")
 
 val javah by tasks.registering(Exec::class) {
     val javah = (System.getenv("JAVA_HOME") ?: System.getProperty("java.home")) + "/bin/javah.exe"
-    commandLine(javah, "-d", file("src/main/public"), "-cp", file("../o2xfs-memory-impl/src/main/java"), "at.o2xfs.memory.impl.win32.Win32MemorySystem")
+    commandLine(javah, "-d", file("src/main/headers"), "-cp", file("../o2xfs-memory-impl/src/main/java"), "at.o2xfs.memory.impl.win32.Win32MemorySystem")
+}
+
+repositories {
+    if((version as String).endsWith("-SNAPSHOT")) {
+        maven {
+            url = uri("https://repo.fagschlunger.co.at/libs-snapshot-local")
+        }
+    }
+    maven {
+        url = uri("https://repo.fagschlunger.co.at/libs-release-local")
+    }
 }
 
 library {
-    targetMachines.add(machines.windows.x86)
-    targetMachines.add(machines.windows.x86_64)
+    targetMachines.set(listOf(machines.windows.x86, machines.windows.x86_64))
+
+    dependencies {
+        implementation("at.o2xfs:o2xfs-common-bin:1.0-SNAPSHOT")
+    }
 }
 
 val libIncludePath = files("$javaHome/include", "$javaHome/include/win32")
@@ -50,7 +64,7 @@ tasks.register<Jar>("dist") {
 
 tasks.withType<PublishToMavenLocal>().configureEach {
     onlyIf {
-        publication == publishing.publications["mavenJava"]        
+        publication == publishing.publications["mavenJava"]
     }
 }
 
