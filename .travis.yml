@@ -28,8 +28,8 @@ os: windows
 language: cpp
 install:
   - choco install adoptopenjdk
-  - export PATH=$PATH:"C:\Program Files\AdoptOpenJDK\jdk-14.0.0.36-hotspot\bin"
-  - export JAVA_HOME="C:\Program Files\AdoptOpenJDK\jdk-14.0.0.36-hotspot"
+  - export PATH=$PATH:"C:\Program Files\AdoptOpenJDK\jdk-14.0.1.7-hotspot\bin"
+  - export JAVA_HOME="C:\Program Files\AdoptOpenJDK\jdk-14.0.1.7-hotspot"
   - ./gradlew --version
   - PowerShell -Command 'Set-ExecutionPolicy -ExecutionPolicy Bypass'
 script:
