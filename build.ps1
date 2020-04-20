@@ -50,3 +50,5 @@ If ($env:TRAVIS_BRANCH -eq 'master') {
 If ($env:TRAVIS_BRANCH -eq 'master' -or $env:TRAVIS_BRANCH -eq 'develop') {
     ./gradlew publish
 }
+
+exit $LastExitCode
